@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Project 4</title>
+      <script src="https://d3js.org/d3.v7.min.js"></script>
+      
+      <script src="https://unpkg.com/topojson-client@3"></script>
+      <link rel="stylesheet" href="style/scroller.css" /> 
+  </head>
+  <body>
+    <main>
+      <div id="content">
+     
+     
+      <div id="sections">
+        <section>
+         <h2 style="line-height : 150%"> <font size = "+4">Hate Crimes in America </font></h2>
+         <div class = "card">
+          <p> 
+            <font size = "+2"> According to the US Department of Justice, a <strong>hate crime</strong> is “a crime motivated by bias against race, color, religion, national origin, sexual orientation, gender, gender identity, or disability.” This project aims to detail how specific events in history influence the frequency, victims, and types of hate crimes committed throughout the United States. Throughout time, the total number of hate crimes in the United States has fluctuated quite a bit, as shown by the visualization on the right. The period between 2001-2002 experienced a large peak in hate crimes.</font> </p>
+         </div>
+        </section>
+
+        <section>
+          <div class="card">
+    <p> <font size = "+2">To investigate why, we analyzed the data filtered by the victim of the crime. The chart on the right shows total hate crimes committed against people that are <span style =  "color: #E91E63" class = "bolded"><strong>Muslim (in pink)</strong> </span>  and people that are <span style = "color: #57ACDC"><strong>Hispanic (blue)</strong></span>. Hate crimes against Muslim people spiked drastically in 2001 and hate crimes against both Muslim and Hispanic people have spiked from 2015 onwards. The hate crimes against Muslims in 2001 can likely be attributed to the 9/11 attacks. Donald Trump’s campaign and presidency starting in 2015 offer a potential explanation for the increase in hate crimes against people that are Hispanic. As demonstrated by the Tweet shown, Trump’s campaign opposed immigration, particularly from Central American countries, and radical Islam. </font></p>
+          </div>
+        </section>
+
+        <section>
+          <div class="card">
+            <p> <font size = "+2">Not all states are created equal when it comes to hate crimes, either. This map demonstrates the number of hate crimes in each state against Muslims, normalized by its total population. States with higher levels may have a higher proportion of Muslims in their population or have areas where Muslims live in a high concentration. Regardless,<strong> California, New York and Michigan</strong> appear to be the states where Muslims are most likely to experience a hate crime.</font></p>
+          </div>
+        </section>
+
+        <section>
+          <div class = "card">
+            <p><font size = "+2">Finally, this map tells a similar story for the Hispanic population in each state, showing the number of hate crimes normalized by total population. <strong>California</strong> was by the far the worst state, likely explained by its large Latino population, followed by <strong>Washington, Massachusetts, Texas, and Arizona.</strong> </font></p>
+            <hr>
+            <p><font size = "+2"><strong>If there is one important lesson you should learn from all of this, it is that prejudice permeates every aspect of American society. Hate crimes are one of its worst representations, but they are not the only way that prejudice appears in society. You should thoroughly explore the ways in which prejudice of all types impacts current society, since there are more subtly micro-aggressive ways that prejudice manifests there.</strong></font></p>
+          </div>
+        </section>
+
+
+      </div>
+
+      <div id="vis"></div>
+    </div>
+    </main>
+  </body>
+
+
+  <script src="js/scroller.js">
+  </script>
+  <script src ="js/visualization.js">
+    d3.require('d3@5')
+  </script>
+  <script src="https://unpkg.com/topojson@3" type = "module"></script>
+
+</html>
